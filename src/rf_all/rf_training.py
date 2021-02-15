@@ -2,7 +2,7 @@ from timeit import default_timer as timer
 
 import xgboost as xgb
 from sklearn.metrics import mean_squared_error
-import daal4py as d4p
+#import daal4py as d4p
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
