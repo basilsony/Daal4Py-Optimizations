@@ -7,7 +7,7 @@ from sklearn.cluster import DBSCAN
 import common
 
 
-NUM_LOOPS = 100
+NUM_LOOPS = 25
 
 print("Computing for DBSCAN Clustering training without Daal")
 
