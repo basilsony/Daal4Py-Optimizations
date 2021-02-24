@@ -22,7 +22,7 @@ git clone  https://github.com/basilsony/Daal4Py-Optimizations
 cd Daal4Py-Optimizations/src/  
 python3 run.py -m="Model Name" -o=100000
 
-# Values within Model Name -m parameter:
+# Values within Model Name (-m) parameter:
 Linear Regression - lm, lm_training, lm_patch, lm_patch_training, daal_lm, daal_lm_training  
 logistic Regression - logit, logit_training, logit_patch, logit_patch_training, daal_logit, daal_logit_training  
 Random Forest - rf, rf_training, rf_patch, rf_patch_training, daal_rf, daal_rf_training  
