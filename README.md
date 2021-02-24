@@ -12,7 +12,7 @@ pip install xgboost
 pip install pandas  
 git clone  https://github.com/basilsony/Daal4Py-Optimizations  
 cd Daal4Py-Optimizations/src/  
-python3 run.py -m=<Model> -o=100000  
+python3 run.py -m="Model Name" -o=100000  
 
 # Steps to Run on Graviton Instance:
 sudo snap install cmake --classic  
@@ -20,4 +20,4 @@ sudo apt update && sudo apt install -y python3-pip python3-pandas python3-sklear
 pip3 install xgboost  
 git clone  https://github.com/basilsony/Daal4Py-Optimizations  
 cd Daal4Py-Optimizations/src/  
-python3 run.py -m=<Model> -o=100000
+python3 run.py -m="Model Name" -o=100000
