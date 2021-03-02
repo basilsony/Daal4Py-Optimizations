@@ -2,7 +2,7 @@ from sklearn.datasets import load_boston
 from sklearn.datasets import make_classification
 
 import numpy as np
-import xgboost as xgb
+#import xgboost as xgb
 import pandas as pd
 
 # Load Boston Housing dataset
