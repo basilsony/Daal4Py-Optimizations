@@ -1,15 +1,16 @@
+import daal4py as d4p
+import daal4py.sklearn
+daal4py.sklearn.patch_sklearn()
+from sklearn.linear_model import LinearRegression
+
 from timeit import default_timer as timer
 
-#import xgboost as xgb
 from sklearn.metrics import mean_squared_error
-import daal4py as d4p
+
 import numpy as np
 import pandas as pd
 import common
 
-import daal4py.sklearn
-daal4py.sklearn.patch_sklearn()
-from sklearn.linear_model import LinearRegression
 
 NUM_LOOPS = 100
 
