@@ -7,9 +7,9 @@ from sklearn.datasets import make_classification
 conda create -n test -y python=3.7  
 conda activate test  
 conda install -c conda-forge -y daal4py  
-pip install scikit-learn  
+conda install -c conda-forge -y scikit-learn  
 pip install xgboost  
-pip install pandas  
+conda install -c conda-forge -y pandas 
 git clone  https://github.com/basilsony/Daal4Py-Optimizations  
 cd Daal4Py-Optimizations/src/  
 python3 run.py -m="Model Name" -o=100000  
