@@ -1,22 +1,14 @@
-import daal4py as d4p
-import daal4py.sklearn
-daal4py.sklearn.patch_sklearn()
-from sklearn.linear_model import LinearRegression
-
-from timeit import default_timer as timer
-
-from sklearn.metrics import mean_squared_error
-
 import numpy as np
+from daal4py.sklearn import patch_sklearn
+patch_sklearn()
+from sklearn.linear_model import LinearRegression
+from timeit import default_timer as timer
+from sklearn.metrics import mean_squared_error
 import pandas as pd
 import common
 
-
 NUM_LOOPS = 100
-
 print("Computing for Linear Regression with Daal Patch")
-
-#reg = LinearRegression().fit(common.X_df, common.y)
 
 def run_inference(num_observations:int = 1000):
     """Run xgboost for specified number of observations"""
