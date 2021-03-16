@@ -26,7 +26,7 @@ def run_inference(num_observations:int = 1000):
     for _ in range(NUM_LOOPS):
         
         start_time = timer()
-        reg = RandomForestRegressor(n_estimators = 100).fit(train_x_df, train_y)
+        reg = RandomForestRegressor(n_estimators = 100, n_jobs = -1).fit(train_x_df, train_y)
         end_time = timer()
 
         total_time = end_time - start_time
