@@ -1,7 +1,6 @@
-import daal4py as d4p
+from sklearnex import patch_sklearn
+patch_sklearn()
 
-import daal4py.sklearn
-daal4py.sklearn.patch_sklearn()
 from sklearn.linear_model import LinearRegression
 
 from timeit import default_timer as timer

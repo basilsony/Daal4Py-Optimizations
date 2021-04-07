@@ -1,6 +1,7 @@
-import numpy as np
-from daal4py.sklearn import patch_sklearn
+from sklearnex import patch_sklearn
 patch_sklearn()
+
+import numpy as np
 from sklearn.linear_model import LinearRegression
 from timeit import default_timer as timer
 from sklearn.metrics import mean_squared_error
