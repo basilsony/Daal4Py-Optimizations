@@ -1,13 +1,12 @@
 from timeit import default_timer as timer
 
+from sklearnex import patch_sklearn
+patch_sklearn()
+
 from sklearn.metrics import mean_squared_error
-import daal4py as d4p
 import numpy as np
 import pandas as pd
 
-
-import daal4py.sklearn
-daal4py.sklearn.patch_sklearn()
 from sklearn.cluster import DBSCAN
 import common
 
